@@ -98,7 +98,7 @@ public class SaveEmployeeTests {
 
         BDDMockito.given(employeeRepository.findAll()).willReturn(java.util.List.of(employee,employee1));
 
-        //when-action or behaviour that we want to test
+        //when-action or behavior that we want to test
         java.util.List<Employee> employees = employeeService.getAllEmployees();
 
         //then-verifying the RESULT
