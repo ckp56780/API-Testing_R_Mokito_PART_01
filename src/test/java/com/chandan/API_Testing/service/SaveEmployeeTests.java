@@ -96,7 +96,10 @@ public class SaveEmployeeTests {
                 .lastName("kumar")
                 .email("mohan@gmail.com").build();
 
-        BDDMockito.given(employeeRepository.findAll()).willReturn(java.util.List.of(employee,employee1));
+        java.util.List<Employee> value = new java.util.ArrayList<>();
+        value.add(employee);
+        value.add(employee1);
+        BDDMockito.given(employeeRepository.findAll()).willReturn(value);
 
         //when-action or behavior that we want to test
         java.util.List<Employee> employees = employeeService.getAllEmployees();

@@ -49,8 +49,7 @@ public class EmployeeControllerIntegrationTests {
                 .email("ckp56780@gmail.com").build(); // Make sure email is provided
 
         //when
-        ResultActions result = mockMvc.perform(post("/api/employees")
-                .contentType(MediaType.APPLICATION_JSON)
+        ResultActions result = mockMvc.perform(post("/api/employees",MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(employee)));
 
         //then
