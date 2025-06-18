@@ -9,8 +9,8 @@ class CalculatorTest {
     @Test
     public void addTest(){
         Calculator calculator=new Calculator();
-        int actualResult = calculator.add(10, 20);
-        assertEquals(30,actualResult);
+        int actualResult = calculator.add(10, 20);  //actual result and expected should be equal
+        assertEquals(actualResult,30); //expected-means what we are expecting
 
     }
 

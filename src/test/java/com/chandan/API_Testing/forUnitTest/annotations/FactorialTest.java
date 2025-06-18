@@ -10,10 +10,10 @@ class FactorialTest {  //should be public, default but not be protected
 
     @Test
     protected void factorialTest(){ //should be public, default and protected
-        Factorial factorial=new Factorial();
-        int actualValue = factorial.factorial(5);
+        Factorial factorial=new Factorial();  //creating the new object
+        int actualValue = factorial.factorial(0);
         //assertEquals(120,actualValue);
-        assertEquals(120,actualValue);
+        assertEquals(1,actualValue);
 
     }
 
