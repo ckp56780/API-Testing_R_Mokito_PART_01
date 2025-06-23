@@ -10,4 +10,13 @@ public class MathUtils_33_34 {
     public boolean isweekDayOrNot(Days day){
         return day!=Days.SATURDAY && day!=Days.SUNDAY;
     }
+
+    ////class-36--@CsvSource annotation --we will use this annotation into test
+    public long factorial(int number){
+        int result=1;
+        for (int i = 1; i <=number; i++) {
+            result=result*i;
+        }
+        return result;
+    }
 }
