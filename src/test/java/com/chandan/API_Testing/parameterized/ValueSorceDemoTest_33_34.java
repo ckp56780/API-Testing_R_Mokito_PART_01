@@ -39,6 +39,5 @@ public class ValueSorceDemoTest_33_34 {
     @ValueSource(strings = {"chandan","parametrized","shweta","balakrishna","1"})
     public void valueSource(String parameter){
         assertNotNull(parameter);
-
     }
 }
