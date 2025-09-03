@@ -13,7 +13,7 @@ import java.util.List;
 public class EmployeeController {
 
     //use dependency injection
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
@@ -23,7 +23,7 @@ public class EmployeeController {
     //Create employee
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Employee saveEmployee(Employee employee){
+    public Employee saveEmployee(@RequestBody Employee employee){
         return employeeService.saveEmployee(employee);
     }
 
